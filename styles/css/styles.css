@@ -19,8 +19,8 @@ body {
   margin: 0 10%;
   font-size: 14px;
   background: white;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, white), color-stop(70%, #f5f7ff)) no-repeat;
-  background: linear-gradient(0deg, white 70%, #f5f7ff 70%) no-repeat;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(65%, white), color-stop(65%, #f5f7ff)) no-repeat;
+  background: linear-gradient(0deg, white 65%, #f5f7ff 65%) no-repeat;
 }
 
 main {
@@ -28,7 +28,7 @@ main {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -63,6 +63,7 @@ h6 {
 
 h6 {
   font-size: 11px;
+  color: #63687e;
 }
 
 article:nth-child(2) {
@@ -148,8 +149,8 @@ input:checked + .slider:before {
 .main__cards--container article {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 3fr 1fr;
-      grid-template-rows: 1fr 3fr 1fr;
+  -ms-grid-rows: 25% 50% 25%;
+      grid-template-rows: 25% 50% 25%;
   width: 230px;
   height: 180px;
   background-color: #f0f2fa;
@@ -184,14 +185,23 @@ input:checked + .slider:before {
   border-top: 4px solid #c4032a;
 }
 
-main .card__title {
+.card__title {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
-main .card__title span {
-  vertical-align: super;
+.card__title img {
+  width: 8%;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.card__title span {
+  vertical-align: sub;
+  color: #63687e;
 }
 
 .card__info--main {
@@ -200,10 +210,19 @@ main .card__title span {
   grid-row: 2 / 3;
 }
 
+.card__info--main p {
+  margin: 0;
+  font-size: 9px;
+  color: #63687e;
+}
+
 .card__info--last {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .card__info--last span {

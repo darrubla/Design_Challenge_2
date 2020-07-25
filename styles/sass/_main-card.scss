@@ -6,7 +6,7 @@
   height: 180px;
   article {
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 25% 50% 25%;
     width: 230px;
     height: 180px;
     background-color: $light-grayish-blue;
@@ -33,19 +33,31 @@
   }
 }
 
-main .card__title {
+.card__title {
   grid-row: 1 / 2;
+  align-self: end;
+  img {
+    width: 8%;
+    vertical-align: -webkit-baseline-middle;
+  }
   span {
-    vertical-align: super;
+    vertical-align: sub;
+    color: $dark-grayish-blue;
   }
 }
 
 .card__info--main {
   grid-row: 2 / 3;
+  p {
+    margin: 0;
+    font-size: 9px;
+    color: $dark-grayish-blue;
+  }
 }
 
 .card__info--last {
   grid-row: 3 / 4;
+  align-self: start;
   span {
     vertical-align: sub;
   }
