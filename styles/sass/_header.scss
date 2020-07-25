@@ -5,9 +5,14 @@ nav {
   align-items: center;
 }
 
-article h4,
+article h2,
 h6 {
   margin: 0;
+}
+
+h6 {
+  font-size: 11px;
+  color: $dark-grayish-blue;
 }
 
 article:nth-child(2) {
@@ -39,7 +44,7 @@ article:nth-child(2) span {
   left: 0;
   right: 0px;
   bottom: 0;
-  background-color: $dark-toggle;
+  background-color: $lime-green;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

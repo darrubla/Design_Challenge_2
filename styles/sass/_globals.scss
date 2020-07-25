@@ -17,5 +17,27 @@ body {
   margin: 0 10%;
   font-size: 14px;
   background: $white;
-  background: linear-gradient(0deg, $white 70%, $very-pale-blue 70%) no-repeat;
+  background: linear-gradient(0deg, $white 65%, $very-pale-blue 65%) no-repeat;
+}
+
+main {
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+span {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.down {
+  color: $youtube;
+}
+
+.up {
+  color: $lime-green;
 }
