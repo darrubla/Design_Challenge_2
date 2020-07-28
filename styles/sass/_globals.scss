@@ -16,12 +16,14 @@ body {
   height: 100%;
   margin: 0 10%;
   font-size: 14px;
-  background: $white;
-  background: linear-gradient(0deg, $white 65%, $very-pale-blue 65%) no-repeat;
+  background: $very-dark-blue;
+  // background: linear-gradient(0deg, $white 65%, $very-pale-blue 65%) no-repeat;
+  background: linear-gradient(0deg, $very-dark-blue 65%, $darker-blue 65%)
+    no-repeat;
 }
 
 main {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -35,7 +37,7 @@ span {
 }
 
 .down {
-  color: $youtube;
+  color: $bright-red;
 }
 
 .up {
@@ -44,6 +46,9 @@ span {
 
 main {
   h2 {
+    position: relative;
     color: $dark-grayish-blue;
+    //dark-theme
+    // color: $white;
   }
 }
