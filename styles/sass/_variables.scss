@@ -1,6 +1,6 @@
 /*PRIMARY*/
 $lime-green: hsl(163, 72%, 41%);
-$briht-red: hsl(356, 69%, 56%);
+$bright-red: hsl(356, 69%, 56%);
 
 $twitter: hsl(195, 100%, 50%);
 $facebook: hsl(203, 89%, 53%);
@@ -21,7 +21,13 @@ $dark-toggle: linear-gradient(
 );
 
 $very-dark-blue: hsl(230, 17%, 14%);
-$darker-blue: hsl(230, 17%, 14%);
-$dark-desaturated-blue: hsl(230, 17%, 14%);
+$darker-blue: hsl(232, 19%, 15%);
+$dark-desaturated-blue: hsl(228, 28%, 20%);
 $desaturated-blue: hsl(228, 34%, 66%);
 $white: hsl(0, 0%, 100%);
+
+@mixin top($color) {
+  height: 4px;
+  width: 100%;
+  background: $color;
+}

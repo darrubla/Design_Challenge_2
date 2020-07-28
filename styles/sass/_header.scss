@@ -1,13 +1,23 @@
 nav {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
+  span {
+    color: $dark-grayish-blue;
+  }
+  article {
+    margin-bottom: 10px;
+  }
 }
 
 article h2,
 h6 {
   margin: 0;
+}
+
+h2 {
+  color: $white;
 }
 
 h6 {
@@ -44,7 +54,7 @@ article:nth-child(2) span {
   left: 0;
   right: 0px;
   bottom: 0;
-  background-color: $lime-green;
+  background: $dark-toggle;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -56,13 +66,13 @@ article:nth-child(2) span {
   width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: $very-dark-blue;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: $dark-toggle;
 }
 
 input:focus + .slider {
