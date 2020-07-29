@@ -31,3 +31,8 @@ $white: hsl(0, 0%, 100%);
   width: 100%;
   background: $color;
 }
+
+@function left($base: 1440px, $viewport) {
+  $result: $base - $viewport;
+  @return $result;
+}

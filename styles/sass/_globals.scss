@@ -8,7 +8,7 @@ html {
   height: 100%;
 }
 
-body {
+.main {
   top: 0;
   left: 0;
   right: 0;
@@ -51,4 +51,10 @@ main {
     //dark-theme
     // color: $white;
   }
+}
+
+h5 {
+  margin: 0;
+  vertical-align: auto;
+  color: $dark-grayish-blue;
 }

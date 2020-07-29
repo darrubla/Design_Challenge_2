@@ -8,12 +8,29 @@
       margin-top: 240px;
     }
   }
+
+  .switch {
+    left: 70%;
+  }
 }
 
 @media (max-width: 465px) {
   main {
     h2 {
       margin-top: 650px;
+    }
+  }
+  .switch {
+    left: 50%;
+  }
+}
+
+#toggle:checked ~ .main {
+  article {
+    background-color: $light-grayish-blue;
+    h1,
+    h2 {
+      color: $dark-desaturated-blue;
     }
   }
 }
